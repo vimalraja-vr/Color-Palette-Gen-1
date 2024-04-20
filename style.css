@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    background: #e8ecf3;
 }
 
 .off-white {
@@ -20,12 +24,27 @@
     background: #cf365f;
 }
 
+.alert-div{
+    text-align: center;
+    margin-top: 40px;
+}
+.alert-div p{
+    font-size: 16px;
+    margin-top: 65px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #0c1226;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-family: inter;
+}
 .section1 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 70px;
 }
 .section1 h1 {
-    font-family: inter, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 500;
 }
 .section1 .colors {
@@ -47,7 +66,72 @@
     margin-bottom: 15px;
 }
 .section1 .colors .color .color-text {
-    font-family: inter, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 500;
 }
+.section2 {
+    text-align: center;
+    margin-top: 100px;
+}
+.section2 .btn {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 18px 150px;
+    background: #7d6cca;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0.4px 0.4px 25px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+}
+.section2 p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.section2 h4{
+    font-size: 18px;
+    margin-top: 55px;
+    font-weight: 400;
+    background: #fff;
+    color: #4c545f;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+}
 
+@media all and (max-width: 768px) {
+    .section1 .colors {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .alert-div {
+        margin-top: 0px;
+    }
+    .section1 .colors {
+        width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+    }
+    .section2 .btn {
+       width: 70%;
+     padding: 20px 30px;
+    }
+    .section2 p{
+        width: 80%;
+        margin: 20px auto 0px auto;
+        font-size: 16px;
+    }
+    .section2 h4{
+        font-size: 13px;
+        margin-top: 20px;
+        font-weight: 400;
+        background: #fff;
+        color: #4c545f;
+        display: inline-block;
+        padding: 12px 25px;
+        border-radius: 50px;
+    }
+}
